@@ -97,10 +97,12 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_category) {
 
         } else if (id == R.id.nav_setting) {
+            Intent settingIntent = new Intent(HomeActivity.this,SettingActivity.class);
+            startActivity(settingIntent);
 
         } else if (id == R.id.nav_logout) {
-            Intent registerIntent = new Intent(HomeActivity.this,MainActivity.class);
-            startActivity(registerIntent);
+            Intent loginIntent = new Intent(HomeActivity.this,MainActivity.class);
+            startActivity(loginIntent);
 
         } else if (id == R.id.nav_share) {
 
