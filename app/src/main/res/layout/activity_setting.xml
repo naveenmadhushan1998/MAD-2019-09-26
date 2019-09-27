@@ -33,10 +33,11 @@
         android:id="@+id/reset_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/total_price"
+
+
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="71dp"
-        android:layout_marginBottom="593dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="472dp"
         android:background="@drawable/buttons"
         android:padding="15dp"
         android:text="Password Reset"

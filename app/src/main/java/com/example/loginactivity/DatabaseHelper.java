@@ -28,6 +28,16 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         onCreate(sqLiteDatabase);
     }
 
+    public long updateUser(String password){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("password",password);
+        long res = db.insert("registeruser",null,contentValues);
+        db.close();
+        return  res;
+    }
+
     public long addUser(String user, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();

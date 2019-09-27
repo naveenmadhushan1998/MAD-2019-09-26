@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +8,99 @@
     tools:context=".HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/apple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+
+        android:text="Apple"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/samsung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/apple"
+        android:text="Samsung"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/lg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/samsung"
+        android:text="LG"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/htc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/lg"
+        android:text="HTC"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/vivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/htc"
+        android:text="vivo"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/mi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/vivo"
+        android:text="mi"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/one_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="14dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/mi"
+        android:text="one plus+"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
