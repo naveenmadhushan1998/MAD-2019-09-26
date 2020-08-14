@@ -1,106 +1,130 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".HomeActivity"
-    tools:showIn="@layout/app_bar_home">
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="60dp"
+    android:fillViewport="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/samimage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:onClick="goSamList"
+            app:srcCompat="@drawable/samsung_logo_square" />
+
+        <Button
+            android:id="@+id/sambtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Samsung" />
+
+        <TextView
+            android:id="@+id/samtext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/samtext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CONDITIONS"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/appleimage"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:scaleType="centerCrop"
+            android:onClick="goAppleList"
+            app:srcCompat="@drawable/apple" />
+
+        <Button
+            android:id="@+id/Applebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/APPLE" />
+
+        <TextView
+            android:id="@+id/Appletext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Appletext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CONDITIONS"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/oneimage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:onClick="goOneplusList"
+            app:srcCompat="@drawable/oneplus_square" />
+
+        <Button
+            android:id="@+id/onebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Oneplus" />
+
+        <TextView
+            android:id="@+id/onetext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/onetext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CONDITIONS"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/googleimage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@drawable/download" />
+
+        <Button
+            android:id="@+id/googlebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Oneplus" />
+
+        <TextView
+            android:id="@+id/googletext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/googletext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CONDITIONS"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
 
 
 
-    <Button
-        android:id="@+id/apple"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-
-        android:text="Apple"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-
-    <Button
-        android:id="@+id/samsung"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/apple"
-        android:text="Samsung"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-    <Button
-        android:id="@+id/lg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/samsung"
-        android:text="LG"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-    <Button
-        android:id="@+id/htc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/lg"
-        android:text="HTC"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-    <Button
-        android:id="@+id/vivo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/htc"
-        android:text="vivo"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-    <Button
-        android:id="@+id/mi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/vivo"
-        android:text="mi"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-    <Button
-        android:id="@+id/one_plus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:padding="14dp"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/mi"
-        android:text="one plus+"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
-
-</RelativeLayout>
+</ScrollView>

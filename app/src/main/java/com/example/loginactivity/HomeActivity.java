@@ -21,18 +21,58 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
 
+        implements NavigationView.OnNavigationItemSelectedListener {
+private ImageView samImageview;
+private Button samButton;
+    private ImageView appleImage;
+    private Button appleButton;
+    private ImageView oneplusImageview;
+    private Button oneplusButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        samImageview = findViewById(R.id.samimage);
+        samButton = findViewById(R.id.sambtn);
+        appleImage = findViewById(R.id.appleimage);
+        appleButton = findViewById(R.id.Applebtn);
+        oneplusImageview = findViewById(R.id.oneimage);
+        oneplusButton = findViewById(R.id.onebtn);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
+
+        oneplusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent oneplus = new Intent(getApplicationContext(),onePlusList.class);
+                startActivity(oneplus);
+            }
+        });
+
+        appleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent apple = new Intent(getApplicationContext(),appleList.class);
+                startActivity(apple);
+            }
+        });
+
+        samButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sam = new Intent(getApplicationContext(),samList.class);
+                startActivity(sam);
+            }
+        });
+
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,5 +153,20 @@ public class HomeActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void goSamList(View view) {
+        Intent sam = new Intent(getApplicationContext(),samList.class);
+        startActivity(sam);
+    }
+
+    public void goAppleList(View view) {
+        Intent apple = new Intent(getApplicationContext(),appleList.class);
+        startActivity(apple);
+    }
+
+    public void goOneplusList(View view) {
+        Intent oneplus = new Intent(getApplicationContext(),onePlusList.class);
+        startActivity(oneplus);
     }
 }

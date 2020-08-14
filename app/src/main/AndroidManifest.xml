@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResetActivity"></activity>
+        <activity android:name=".onePlusList"></activity>
+        <activity android:name=".appleList" />
+        <activity android:name=".samList" />
+        <activity android:name=".Test" />
+        <activity android:name=".ResetActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".ResetPWActivity" />
         <activity

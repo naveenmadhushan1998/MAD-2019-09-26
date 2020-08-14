@@ -25,5 +25,13 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="Samsung">SAMSUNG</string>
+    <string name="OFF">10% Off</string>
+    <string name="CONDITIONS">Conditions apply*</string>
+    <string name="APPLE">APPLE</string>
+    <string name="Oneplus">ONEPLUS</string>
+    <string name="samsungList">Samsung List</string>
+    <string name="appleList">IphoneList</string>
+    <string name="oneplusList">OnePlus List</string>
 
 </resources>
